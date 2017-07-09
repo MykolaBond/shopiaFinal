@@ -1,0 +1,316 @@
+@import "fonts";
+@import"color";
+@import"button";	
+
+.list-reset{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	background-color: rgb(237, 239, 241);
+}
+header{
+	position: relative;
+	.fa{
+		position: absolute;
+		display: none;
+	}
+	.container{
+		padding-top: 50px;
+		h2{
+			color: $colorM;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 36px;
+			margin: 0;
+		}
+		
+		p{
+			color:  #dd4b2b;
+			font-family: 'Roboto Slab',serif;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 36px;
+		}
+		ul{
+			@extend .list-reset;
+			li{
+				a{
+					color: $colorM;
+					font-family: 'Roboto Slab',serif;
+					font-size: 18px;
+					line-height: 24px;
+					font-weight: 400;
+				}
+			}
+			
+		}
+	}
+	
+	.nav-pills{
+		.nav-link.active{
+			border-radius: 30px;
+			background-color:rgb(221, 75, 43);
+			color: #fff;
+		}
+	} 
+}
+
+/*
+main section
+*/
+.main{
+	background: url('../img/mainBg.png') no-repeat;
+	background-size: cover;
+	text-align: center;
+	h1{
+		padding-top: 489px;
+		color: $colorL;
+		font-size: 72px;
+		font-weight: 300;
+		line-height: 48px;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+		
+	}
+	p{
+		color: $colorL;
+		font-family: 'Roboto Slab',serif;
+		line-height: 30px;
+		padding-bottom: 45px;
+	}
+	.row{
+		h2{
+		color: $colorL;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 24px;
+		margin: 30px auto;
+		}
+		p{
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 30px
+		}
+		button{
+			margin-top: 50px;
+			margin-bottom: 138px;
+			width: 213px;
+			height: 54px;
+			border: 1px solid  rgba(255, 255, 255, 50);
+			border-radius: 40px;
+			font-family: 'Roboto Slab', serif;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 30px;
+			a{
+				color:  #612316;
+				&:hover{
+				text-decoration: none;
+				}
+			}
+			
+		}
+	}
+}
+.news{
+	text-align: center;
+	h2{
+		color: $colorM;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 24px;
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	h3{
+	color: $colorM;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 45px;
+	}
+	p{
+		color: $colorM;
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 30px;
+	}
+	@include button;
+	button{
+		width: 179px;
+		height: 54;
+		a{
+			font-family: 'Roboto',sans-serif;
+			color:  #4e5159;
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 30px;
+		}
+		&:hover{
+			background-color: #607962;
+			a{
+				color: #fff;
+				&:hover{
+				text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.form{
+	background-image:url(../img/sundwiches.png);
+	background-size: cover;
+	background-position: center;
+	.newsletter{
+		width: 550px;
+		text-align: center;
+		margin: auto;
+		padding-top: 120px;
+		padding-bottom: 120px;
+		h3{
+			color:  $colorL;
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 48px
+		}
+		p{
+			color:  $colorL;
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 24px;
+		}
+		form{
+			position: relative;
+			input{
+				border-radius: 30px;
+				border: 1px solid rgba(255, 255, 255, 50);
+				background-color:  rgba(255, 255, 255, 0.2);
+				font-family: 'Roboto Slab',serif;
+				color: #f3f4f6;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 30px;
+				text-align: left;
+				padding-left: 40px;
+				height: 54px;
+				width: 509px;
+			}
+			@include button;
+			button{
+				height: 54px;
+				font-family: 'Roboto Slab',serif;
+				color:  rgba(97, 35, 22, 0.72);
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 30px;
+				border: 1px solid rgba(255, 255, 255, 50);
+				margin: 0;
+				position: absolute;
+				right: 22px;
+			}
+		}
+	}
+}
+.oneMore{
+	.rowTop{
+		padding-top: 50px;
+		@include button;
+		button{
+		background-color:  #dd4b2b;
+		width: 213px;
+		height: 54px;
+			a{
+				font-family: 'Roboto Slab',serif;
+				color:  #ffffff;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 30px;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.empty{
+		
+		border: 1px solid #dedbdb;
+	}
+	.text{
+		padding: 30px;
+		
+	}
+	h3{
+		color:  $colorD;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 48px;
+	}
+	p{
+		color:  $colorD;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 30px;
+	}
+	
+	.rowBtm{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		@include button;
+		button{
+		background-color:#4b4e73;
+		width: 213px;
+		height: 54px;
+			a{
+				font-family: 'Roboto Slab',serif;
+				color:  #ffffff;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 30px;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+footer{
+	background-color:#d75d0e;
+	text-align: center;
+	ul{
+		@extend .list-reset;
+		padding-bottom: 70px;
+		padding-top: 70px;
+		li{
+			a{
+				font-family: 'Roboto',sans-serif;
+				color:  #ffffff;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 36px;
+				&:hover{
+					text-decoration: none;
+					color: #e3dfdf;
+				}
+			}
+		}
+	}
+	
+}
+
+.copy{
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 200px;
+		background: url(../img/sundwiches.png) bottom;
+		background-size: cover;
+	div{
+		width: 450px;
+		margin: auto;
+		p{
+			color: #ffffff;
+		}
+	}
+}
+@import"mediaSm";

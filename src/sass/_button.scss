@@ -1,0 +1,16 @@
+@mixin button	{
+	button{
+			margin-top: 50px;
+			margin-bottom: 138px;
+			width: 213px;
+			height: 54px;
+			border: 1px solid  rgba(255, 255, 255, 50);
+			border-radius: 40px;
+			font-family: 'RobotoSlab', serif;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 30px;
+			background-color: #ffffff;
+	}
+}	
+			

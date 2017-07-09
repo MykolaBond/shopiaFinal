@@ -1,0 +1,23 @@
+{
+  "name": "shopia",
+  "description": "shopia project",
+  "main": "index.js",
+  "authors": [
+    "Mykola Bondarenko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/MykolaBond/shopiaFinal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "swiper": "^3.4.2"
+  }
+}
